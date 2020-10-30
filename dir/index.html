@@ -66,27 +66,33 @@
   <!-- <botton class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt=""></botton>
   <botton><img src="images/arrow-right.svg" alt=""></botton> -->
 
-  <section class="banner-section">
+  <section class="banner-section page-section">
     <div class="container">
       <div class="banner-section__inner">
         <div class="banner-section__slider">
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
           <a class="banner-section__slider-item" href="#">
-            <img src="images/banner-slider.jpg" alt="">
+            <img class="banner-section__slider-img
+            " src="images/banner-slider.jpg" alt="">
           </a>
         </div>
        <!-- section sale banner -->
@@ -100,15 +106,45 @@
          </div>
          <img class="sale-item__img" src="images/content/item.jpg" alt="" >
          <h5 class="sale-item__title">Лодочный мотор Suzuki DF9.9BRS</h5>
-         <div class="sale-item__footer">Акция действует до
+         <p class="sale-item__footer">Акция действует до
            <span>31.08.2020</span>
-         </div>
+         </p>
        </a>
 
       </div>
     </div>
   </section>
-  
+  <section class="search page-section">
+    <div class="container">
+      <div class="search_inner">
+        <div class="search__tabs">
+          <a class="search__tabs-item search__tabs-item--active" href="#tab-1">Поиск по  номеру</a>
+          <a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
+          <a class="search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+        </div>
+        <div class="search__content">
+          <div id="tab-1" class="search__content-item search__content-item--active">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите номер">
+              <button class="search__content-btn" type="submit">Искать</button>
+            </form>
+          </div>
+          <div id="tab-2" class="search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите марку">
+              <button class="search__content-btn" type="submit">Искать</button>
+            </form>
+          </div>
+          <div id="tab-3" class="search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите название товара">
+              <button class="search__content-btn" type="submit">Искать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
