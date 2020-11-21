@@ -19,4 +19,9 @@ $(function(){
         $('.product-item__faivorite').toggleClass('product-item__faivorite--active');
     });
 
+    $('.product__slider').slick({
+       slidesToShow:4,
+       slidesToScroll:1,
+    });
+
 });

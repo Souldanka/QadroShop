@@ -295,10 +295,11 @@ background-color: #fff;
     font-family: "SFProDisplay-Bold", sans-serif;
     font-weight: 700;
 }
-.search__content-item{
+
+.tabs-content{
     display: none;
 }
-.search__content-item.tabs-content--active{
+.tabs-content.tabs-content--active{
     display: block;
 }
 .search__content-form{
@@ -393,6 +394,7 @@ background-color: #fff;
 .product-item__wrapper{
     position: relative;
     width: 271px;
+    
 }
 .product-item{
     border: 1px solid #CDCDCD;
@@ -400,6 +402,7 @@ background-color: #fff;
     text-align: center;
     padding: 52px 20px 31px;
     transition: all .3s;
+    min-height: 400px;
 }
 .product-item:hover .product-item__notify-text{
     color: #2F3035;
@@ -462,8 +465,8 @@ background-color: #fff;
     transition: all .3s;
 }
 .product-item:hover .product-item__hover-text{
- opacity: 1;
- color: #2F3035;
+    opacity: 1;
+    color: #2F3035;
 }
 .product-item:hover{
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
@@ -489,7 +492,7 @@ background-color: #fff;
     line-height: 21px;
 }
 .product-item__notify-text{
-    display: none;
+    display: none; 
 }
 
 .product-item__wrapper .product-item__not-available .product-item__notify-text{
@@ -499,15 +502,41 @@ background-color: #fff;
     display: none;
 }
 .product-item__wrapper .product-item__not-available .product-item__title{
-    padding-bottom: 13px;
+    padding-bottom:13px;
 }
+.product-item__notify-link{
+        display: none;
+    }
 .product-item__wrapper .product-item__not-available .product-item__notify-link{
-    display: none;
+    display: block;
     position: absolute;
     bottom: 20px;
     left: 0;
     right: 0;
     font-style: 16px;
     line-height: 19px;
+    text-align: center;
+    color:#1C62CD;
+}
+.product-item__wrapper .product-item__not-available .product-item__notify-link span{
     border-bottom: 1px solid #1C62CD;
+}
+.product__title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.products__tab + .products__tab{
+    margin-left: 50px;
+}
+.products__tabs{
+    margin-bottom: 25px;
+}
+.products__tab{
+    padding-bottom: 10px;
+}
+.products__tab.tab--active{
+    border-bottom: 2px solid #1C62CD;
 }
