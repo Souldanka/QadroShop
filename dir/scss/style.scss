@@ -11,6 +11,7 @@ ul,li{
 }
 h1, h2, h3, h4, h5, h6{
     margin-top: 0;
+    margin: 0;
 
 }
 p{
@@ -593,8 +594,9 @@ background-color: #fff;
     display: flex;
     justify-content: space-between;
 }
-.footer__top-newsletter{
+.footer__top-newsletter.footer__top-item{
     width: 295px;
+    margin-right: 50px;
 }
 .footer__top-title{
     font-size: 14px;
@@ -627,4 +629,23 @@ background-color: #fff;
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.12em;
+}
+.footer__top-item{
+    width: 200px;
+}
+.footer__list{
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer__top-social.footer__top-item{
+    width: 250px;
+}
+.social-list{
+    display:flex;
+    align-items:center;
+    height: 100%;
+}
+.social-list__item{
+    margin-right: 30px;
+   
 }
